@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/stayle.css">
+    <link rel="icon" type=”image/png” href="./image/בלי רקע.png">
+    <title>חיפוש טיסה</title>
+</head>
+
+<body>
+    <ul class="nav flex-row-reverse nav-tabs flight" id="nav"> </ul>
+    <form class="d-flex m-auto flex-wrap justify-content-around mt-5" style="width: 60%;" id="form">
+        <div style="width: 40%;">
+            <label for="formGroupExampleInput" class="form-label">field of origin</label>
+            <select class="form-control" aria-label="Disabled select example" disabled>
+                <option selected>TLV תל אביב</option>
+            </select>
+        </div>
+        <div style="width: 40%;">
+            <label for="formGroupExampleInput" class="form-label">destination field</label>
+            <select class="form-select w-70" aria-label="Default select example" id="select">
+                <option selected>Select a destination </option>
+            </select>
+        </div>
+        <div class="mb-3 w-70" style="width: 90%;">
+            <label for="formGroupExampleInput" class="form-label">date</label>
+            <input type="date" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+        </div>
+        <button class="btn btn-primary" type="submit" id="btn_search" style="width: 15%;">חיפוש </button>
+    </form>
+    <div id="temp" class="d-flex flex-wrap justify-content-around " style="width: 75%;margin: auto; "> </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./jquery-3.6.4.min.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/flight.js"></script>
+
+</body>
+
+</html>
